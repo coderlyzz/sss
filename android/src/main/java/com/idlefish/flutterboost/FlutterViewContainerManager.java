@@ -236,6 +236,10 @@ public class FlutterViewContainerManager implements IContainerManager {
         return false;
     }
 
+    public Map<IFlutterViewContainer, IContainerRecord> getRecordMap() {
+        return mRecordMap;
+    }
+
     public static class ContainerRef {
         public final String uniqueId;
         public final WeakReference<IFlutterViewContainer> container;
